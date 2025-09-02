@@ -173,24 +173,6 @@ $reMajor = '(?i)(typeface\s*=\s*["''])(?:Arial\s*Nova\s*Light|ArialNova[-\s]?Lig
 
 ---
 
-## Troubleshooting
-
-* **“UTF8NoBOM is invalid” on PS5.1:** The script already handles this by using .NET for BOM-less UTF-8.
-* **No matches for “Headings”:** Your files may use a different name for Arial Nova Light. Use the broadened `$reMajor` above.
-* **Weird characters like `â†’`** in console output: that’s Unicode punctuation from older scripts; this repo uses ASCII arrows `->`.
-
----
-
-## Contributing
-
-PRs welcome! Please:
-
-* Keep the script **ASCII-only** (no smart quotes/dashes).
-* Support both Windows PowerShell 5.1 and PowerShell 7+.
-* Add tests or sample XMLs where helpful.
-
----
-
 ## License
 
 MIT. Use at your own risk.
